@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Input the Display Time (Like 10:30 Input 1030)"
+        android:textColor="#A5A5A5"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:ems="10"
+        android:hint=""
+        android:textSize="30sp"
+        android:textColor="#A5A5A5"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text=""
+        android:textColor="#808080"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/caculate"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@color/colorAccent"
+        android:text="Generate" />
+
+</LinearLayout>
