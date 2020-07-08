@@ -29,11 +29,24 @@ public class MainActivity extends AppCompatActivity {
         caculate.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                timevalue = Integer.parseInt(time.getText().toString());
+if(time.isEmpty)
+                {
+Toast.makeText(this, "Please Enter The Time", Toast.LENGTH_SHORT).show();
+    return;
+                }
+                else
+                  {
+                   timevalue = Integer.parseInt(time.getText().toString());
+                    password = Math.pow(9999 - timevalue, 2);
+                    result.setText(String.format("%.0f", password));
+                  }
+
+
+ //               timevalue = Integer.parseInt(time.getText().toString());
  //             password =  (9999 - timevalue)*(9999 - timevalue); works fine unless theres 0 at the end
  //             password = Math.pow((9999 - timevalue)*(9999 - timevalue)); IDK WHY DONT ASK
-                password = Math.pow(9999 - timevalue, 2);
-                result.setText(String.format("%.0f", password));
+ //               password = Math.pow(9999 - timevalue, 2);
+//                result.setText(String.format("%.0f", password));
 
             }
         });{
